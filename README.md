@@ -5,7 +5,8 @@
 adição e remoção de itens do carrinho de compras. Projeto inicial: https://www.youtube.com/watch?v=HSAlJJI6K_A</p>  
 <p>
   Neste projeto pude realizar alterações minhas como melhorar a performace do carrinho, visto que ao adicionar itens iguais ao carrinho, as KEYs corrompiam, 
-  logo consertei este problema reforçando ainda mais que cada item fosse único. 
+  logo consertei este problema reforçando ainda mais que cada item fosse único, onde a chave KEY usada para cada elemento do array é o índice(index) do array.
+  Já no código inicial a chave pe o 'id' do item('cartItem.id'). <br>
 </p>
 <p>
   Outro problema encontrado foi que caso tivesse produtos iguais no carrinho e o usuário desejasse
