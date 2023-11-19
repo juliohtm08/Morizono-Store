@@ -16,3 +16,6 @@ adição e remoção de itens do carrinho de compras.
 * HTML5
 * CSS3
 * API do Mercado Livre
+
+## Tela inicial
+![imagem da tela inicial](https://github.com/juliohtm08/morizono-store/assets/102925073/b45df1c0-eb06-4351-8af4-ecd1a925d09a)
