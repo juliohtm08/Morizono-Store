@@ -5,17 +5,15 @@ import Logo from '../Logo/Logo';
 
 import './Header.css';
 
-
 function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Logo/>
-        <SearchBar />
-        <CartButton />
+        <Logo /> {/* Componente do logotipo */}
+        <SearchBar /> {/* Componente da barra de pesquisa */}
+        <CartButton /> {/* Componente do botão do carrinho */}
       </div>
     </header>
   );
 }
-
 export default Header;

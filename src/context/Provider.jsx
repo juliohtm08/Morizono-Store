@@ -2,28 +2,29 @@ import React, { useState } from 'react';
 import propTypes from 'prop-types';
 import AppContext from './AppContext';
 
-
 function Provider({ children }) {
-
+  // Estados locais para produtos, itens no carrinho, carregamento e visibilidade do carrinho
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isCartVisible, setIsCartVisible] = useState(false);
 
+  // Objeto que representa o valor fornecido pelo contexto
   const value = {
-    products, 
+    products,
     setProducts,
-    loading, 
+    loading,
     setLoading,
-    cartItems, 
+    cartItems,
     setCartItems,
-    isCartVisible, 
-    setIsCartVisible
+    isCartVisible,
+    setIsCartVisible,
   };
 
-  return ( 
+  return (
+    // Provedor do contexto AppContext com o valor configurado
     <AppContext.Provider value={value}>
-      {children}
+      {children} {/* Renderiza os componentes filhos envolvidos pelo contexto  */}
     </AppContext.Provider>
   );
 }

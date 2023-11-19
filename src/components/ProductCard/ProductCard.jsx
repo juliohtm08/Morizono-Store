@@ -6,39 +6,45 @@ import AppContext from '../../context/AppContext';
 
 import './ProductCard.css';
 
-function ProductCard({ data }){
-  console.log(data);
+function ProductCard({ data }) {
+  // Dados do produto
   const { title, thumbnail, price } = data;
-  const {cartItems, setCartItems} = useContext(AppContext);
-  
+
+  // Obtendo cartItems e setCartItems do AppContext
+  const { cartItems, setCartItems } = useContext(AppContext);
+
+  // Função para adicionar o produto ao carrinho
   const handleAddCart = () => {
-    setCartItems([ ...cartItems, data]);
+    setCartItems([...cartItems, data]);
   };
 
-  return(
+  return (
+    // Seção representando um cartão de produto
     <section className="product-card">
-      
-      <img 
-        src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')} 
-        alt="product" 
-        className="card__image" />
-
-      <div className="card__infos">
-        <h2 className="card__price">{formatCurrency(price, 'BRL')}</h2>
-        <h2 className="card__title">{title}</h2>
+      <img
+        src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')}
+        alt="product"
+        className="card__image"
+      />
+      <div className="card__infos"> {/* Informações do produto */}
+        <h2 className="card__price">{formatCurrency(price, 'BRL')}</h2> {/* Preço do produto */}
+        <h2 className="card__title">{title}</h2> {/* Título do produto */}
       </div>
-      <button 
-        type="button" 
+
+      {/* Botão para adicionar o produto ao carrinho */}
+      <button
+        type="button"
         className="button__add__cart"
-        onClick={ handleAddCart }>
+        onClick={handleAddCart}
+      >
         <LiaCartPlusSolid />
       </button>
     </section>
   );
 }
 
-export default ProductCard;
-
 ProductCard.propTypes = {
   data: propTypes.shape({}),
 }.isRequired;
+
+export default ProductCard;

@@ -5,7 +5,7 @@ import './Loading.css';
 
 function Loading() {
   return ( 
-    <BiLoaderAlt className="loading" />
+    <BiLoaderAlt className="loading" /> // Componente de carregamento, exibindo um ícone de loader
   );
 }
 
