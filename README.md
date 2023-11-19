@@ -31,7 +31,7 @@ adicionando uma logo e um fav-icon da loja, entre outras desse tipo.
 * Buscar produtos: É possível realizar a busca de qualquer produto que esteja na API do Mercado Livre utilizando palavras-chaves;
 * Listar produtos: Ao realizar Busca do produto, eles serão listados e exibidos para o usuário, contendo o título do produto, sua descrição e seu preço;
 * Adicionar itens ao carrinho: É possível adicionar itens ao carrinho de compras, além disso, seus preços serão somados e o valor total será exibido para o usuário;
-* Remocer itens do carrinho: É possivel remover os itens do carrinho de compras, e com isso o valor total diminuirá conforme as remoções;
+* Remover itens do carrinho: É possivel remover os itens do carrinho de compras, e com isso o valor total diminuirá conforme as remoções;
 
 ## Tecnologias utilizadas
 * React JS
