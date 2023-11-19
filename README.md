@@ -45,3 +45,6 @@ adicionando uma logo e um fav-icon da loja, entre outras desse tipo.
 
 ### b)Tela do Carrinho de compras
 ![imagem do carrinho](https://github.com/juliohtm08/morizono-store/assets/102925073/81219d50-d738-4a4d-bcab-ace341213e91)
+
+ ## Confira o resultado final 
+ link: https://morizono-store.vercel.app/
