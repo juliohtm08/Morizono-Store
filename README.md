@@ -5,6 +5,8 @@ Este projeto consite em um sistema de carrinho de compras desenvolvido com React
 adição e remoção de itens do carrinho de compras. <br>
 Projeto inicial: https://www.youtube.com/watch?v=HSAlJJI6K_A
 
+## Alterações
+
 Neste projeto pude realizar algumas alterações como melhorar a performace do carrinho, visto que ao adicionar itens iguais ao carrinho, as KEYs corrompiam, 
 logo consertei este problema reforçando ainda mais que cada item fosse único, onde a chave KEY usada para cada elemento do array é o índice(index) do array.
 Já no código inicial a chave era o 'id' do item('cartItem.id'). <br>
