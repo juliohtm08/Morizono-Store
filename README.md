@@ -9,7 +9,7 @@ Projeto inicial: https://www.youtube.com/watch?v=HSAlJJI6K_A
 
 Neste projeto pude realizar algumas alterações como melhorar a performace do carrinho, visto que ao adicionar itens iguais ao carrinho, as KEYs corrompiam, 
 logo consertei este problema reforçando ainda mais que cada item fosse único, onde a chave KEY usada para cada elemento do array é o índice(index) do array.
-Já no código inicial a chave era o 'id' do item('cartItem.id'). <br>
+Já no código inicial a chave era o 'id' do item('cartItem.id'). (src/components/CarItem/CartItem.jsx)
 ### Código antigo:
 ![cod antigo remover item](https://github.com/juliohtm08/morizono-store/assets/102925073/066fd020-7f2b-44fc-bbf9-5971fc06365d)
 ### código atualizado: 
@@ -17,7 +17,7 @@ Já no código inicial a chave era o 'id' do item('cartItem.id'). <br>
     
 Outro problema encontrado foi que caso tivesse produtos iguais no carrinho e o usuário desejasse
 remover apenas único produto repetido, todos os produtos iguais eram removidos. Assim resolvi este problema também, onde usei a combinação de 'slice' e propagação ('...')
-para criar um novo array sem o item a ser removido. <br>
+para criar um novo array sem o item a ser removido. (src/components/Cart/Cart.jsx)
 ### Código antigo: 
 ![cod antigo key](https://github.com/juliohtm08/morizono-store/assets/102925073/144379c6-4513-496d-a076-c362d0312cb6)
 ### Código atualizado:
