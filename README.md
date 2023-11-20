@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Morizono Store - Shopping Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## O que é?
+Este projeto consite em um sistema de carrinho de compras desenvolvido com React JS. Nele possui a listagem de produtos, a busca de produtos, utilizando a API do Mercado Livre, 
+adição e remoção de itens do carrinho de compras. <br>
+Projeto inicial: https://www.youtube.com/watch?v=HSAlJJI6K_A
 
-## Available Scripts
+## Alterações
 
-In the project directory, you can run:
+Neste projeto pude realizar algumas alterações como melhorar a performace do carrinho, visto que ao adicionar itens iguais ao carrinho, as KEYs corrompiam, 
+logo consertei este problema reforçando ainda mais que cada item fosse único, onde a chave KEY usada para cada elemento do array é o índice(index) do array.
+Já no código inicial a chave era o 'id' do item('cartItem.id'). <br>
+### Código antigo:
+![cod antigo remover item](https://github.com/juliohtm08/morizono-store/assets/102925073/066fd020-7f2b-44fc-bbf9-5971fc06365d)
+### código atualizado: 
+![cod atual remover item](https://github.com/juliohtm08/morizono-store/assets/102925073/f7bd890a-946e-4158-b880-4348ca46a24b)
+    
+Outro problema encontrado foi que caso tivesse produtos iguais no carrinho e o usuário desejasse
+remover apenas único produto repetido, todos os produtos iguais eram removidos. Assim resolvi este problema também, onde usei a combinação de 'slice' e propagação ('...')
+para criar um novo array sem o item a ser removido. <br>
+### Código antigo: 
+![cod antigo key](https://github.com/juliohtm08/morizono-store/assets/102925073/144379c6-4513-496d-a076-c362d0312cb6)
+### Código atualizado:
+![cod atual key](https://github.com/juliohtm08/morizono-store/assets/102925073/559fb424-7726-41a7-9246-4e055bd3df25)
 
-### `npm start`
+Além dessas alterações, tive a liberdade de estilizar o site da maneira que eu desejasse, alterando as cores do backgroud, da header, do carrinho, 
+adicionando uma logo e um fav-icon da loja, entre outras desse tipo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Buscar produtos: É possível realizar a busca de qualquer produto que esteja na API do Mercado Livre utilizando palavras-chaves;
+* Listar produtos: Ao realizar Busca do produto, eles serão listados e exibidos para o usuário, contendo o título do produto, sua descrição e seu preço;
+* Adicionar itens ao carrinho: É possível adicionar itens ao carrinho de compras, além disso, seus preços serão somados e o valor total será exibido para o usuário;
+* Remover itens do carrinho: É possivel remover os itens do carrinho de compras, e com isso o valor total diminuirá conforme as remoções;
 
-### `npm test`
+## Tecnologias utilizadas
+* React JS
+* HTML5
+* CSS3
+* API do Mercado Livre
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Imagens
+### a)Tela Inicial
+![imagem da tela inicial](https://github.com/juliohtm08/morizono-store/assets/102925073/b45df1c0-eb06-4351-8af4-ecd1a925d09a)
 
-### `npm run build`
+### b)Tela do Carrinho de compras
+![imagem do carrinho](https://github.com/juliohtm08/morizono-store/assets/102925073/81219d50-d738-4a4d-bcab-ace341213e91)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ## Confira o resultado final 
+ link: https://morizono-store.vercel.app/
