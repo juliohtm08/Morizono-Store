@@ -58,3 +58,9 @@
 .product-card:hover .button__add__cart{
   display: flex;
 }
+
+@media (max-width: 459px){
+  .product-card{
+    margin-top: 80px;
+  }
+}

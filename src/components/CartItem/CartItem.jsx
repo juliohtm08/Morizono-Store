@@ -22,7 +22,6 @@ function CartItem({ data }) {
         ...cartItems.slice(itemIndex + 1),
       ];
       setCartItems(updatedItems);
-      console.log(updatedItems);
     }
   };
   

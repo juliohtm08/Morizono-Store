@@ -1,13 +1,22 @@
-.header{
+.header {
   background-color: #ebebeb;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-.header > div{
+.header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  gap: 5%;
+}
+
+@media (max-width: 459px){
+  .header > div{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

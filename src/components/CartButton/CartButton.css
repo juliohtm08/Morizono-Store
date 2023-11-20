@@ -27,3 +27,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 424px){
+  .cart__button{
+    margin-top: 2%;
+  }
+}

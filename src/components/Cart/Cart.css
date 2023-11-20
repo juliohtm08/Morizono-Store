@@ -35,3 +35,10 @@
 .cart--active{
   transform: translate(0, 0);
 }
+
+@media (max-width: 459px){
+  .cart{
+    margin-top: 28%;
+    height: 86.5vh;
+  }
+}
